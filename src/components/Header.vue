@@ -1,6 +1,6 @@
 <template>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav id="header-nav" class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"
           ><img
@@ -41,11 +41,41 @@
       </div>
     </nav>
     <div id="header-jumbotron">
+      <div class="layover"></div>
       <img
         class="img-jumbo"
         src="../assets/images/home-slider-62528242.jpg"
         alt="Header Jumbo image"
       />
+      <div class="jumbo-description">
+        <h1 class="text-uppercase text-white my-fw-600 mb-4">
+          Buiding inspiring spaces
+        </h1>
+        <p class="my-text-yellow fs-5 mb-4">
+          We build Inspiring Residential & Commercial Spaces
+        </p>
+        <button class="my-btn me-2">Explore recent work</button>
+        <button class="my-btn my-btn-yellow ms-2">Get a quote today</button>
+      </div>
+      <div class="jumbotron-span">
+        <span>
+          <i class="fas fa-folder"></i>
+          <p class="mb-0">Demos</p>
+        </span>
+        <span>
+          <i class="fas fa-dollar-sign text-success"></i>
+          <p class="mb-0">On Sale</p>
+        </span>
+      </div>
+    </div>
+    <div
+      id="header-bottom"
+      class="d-flex justify-content-center align-items-center"
+    >
+      <h3 class="text-center my-color-title my-fw-400 m-0">
+        Do You Have A Construction Project We Can Help With?
+      </h3>
+      <button class="my-btn">Get a free quote</button>
     </div>
   </header>
 </template>
@@ -115,13 +145,67 @@ header {
 
   div#header-jumbotron {
     width: 100%;
-    height: 600px;
+    height: 700px;
     position: relative;
+
+    div.layover {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    div.jumbo-description {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
 
     img.img-jumbo {
       width: 100%;
       height: 100%;
       object-fit: cover;
+    }
+
+    div.jumbotron-span {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 2rem 1rem;
+
+      span {
+        display: block;
+        width: 85px;
+        height: 85px;
+        border-radius: 0.6rem;
+        margin-bottom: 0.6rem;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        i {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+
+  div#header-bottom {
+    height: 120px;
+    background-color: $secondary-color;
+    position: relative;
+
+    button {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 1.5rem);
+      border: 2px solid white;
     }
   }
 }

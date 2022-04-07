@@ -1,25 +1,46 @@
 /* Importo Bootstrap nel mio foglio di stile */
 @import '~bootstrap/scss/bootstrap.scss';
 
+/* Importo Font Awesome 5.15.3 */
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
 /* Importo le variabili scss */
 @import "./_variables.scss";
 
-/* Importo Roboto da Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* Importo Montserrat da Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.my-fw-400 {
+  font-weight: 400;
+}
+
+.my-fw-600 {
+  font-weight: 600;
+}
+
+.my-color-title {
+  color: $primary-color;
+
 }
 
 .my-btn {
   background-color: $primary-color;
   color: white;
   text-transform: uppercase;
-  padding: .3rem 1.9rem;
+  padding: .55rem 2rem;
   border: none;
 }
 
 .my-btn-yellow {
   background-color: $secondary-color;
   color: $paragraph-color;
+}
+
+.my-text-yellow {
+  color: $secondary-color;
 }
