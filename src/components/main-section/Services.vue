@@ -1,6 +1,6 @@
 <template>
   <section id="service">
-    <div class="description-section">
+    <div class="description-section container">
       <h3>Specialists In Modern Construction</h3>
       <div class="my-yellow-hr"></div>
       <p>

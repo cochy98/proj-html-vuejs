@@ -1,6 +1,6 @@
 <template>
   <section id="work">
-    <div class="description-section">
+    <div class="description-section container">
       <h3>Explore Recent Work</h3>
       <div class="my-yellow-hr"></div>
       <p>
@@ -40,7 +40,7 @@
         </div>
       </div>
     </div>
-    <div class="end-section container pt-3 pb-5">
+    <div class="end-section container pt-2 pb-4">
       <div class="row">
         <div class="col-12">
           <h6>View all projects</h6>
