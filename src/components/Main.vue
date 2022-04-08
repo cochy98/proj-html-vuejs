@@ -1,20 +1,20 @@
 <template>
   <main>
-    <h1 class="text-danger">Main</h1>
+    <Services />
   </main>
 </template>
 
 <script>
+import Services from "./main-section/Services.vue";
 export default {
   name: "IndexMain",
+  components: {
+    Services,
+  },
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 /* Importo le variabili scss */
 @import "../assets/scss/_variables.scss";
-main {
-  height: 500px;
-  border: 2px solid red;
-}
 </style>

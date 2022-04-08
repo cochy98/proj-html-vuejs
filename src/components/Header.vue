@@ -48,8 +48,8 @@
         alt="Header Jumbo image"
       />
       <div class="jumbo-description">
-        <h1 class="text-uppercase text-white my-fw-600 mb-4">
-          Buiding inspiring spaces
+        <h1 class="text-uppercase text-white mb-4">
+          Building inspiring spaces
         </h1>
         <p class="my-text-yellow fs-5 mb-4">
           We build Inspiring Residential & Commercial Spaces
