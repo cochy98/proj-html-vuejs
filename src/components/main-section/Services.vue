@@ -1,6 +1,6 @@
 <template>
   <section id="service">
-    <div class="description-section pt-4">
+    <div class="description-section">
       <h3>Specialists In Modern Construction</h3>
       <div class="my-yellow-hr"></div>
       <p>
@@ -107,11 +107,6 @@ export default {
 <style lang="scss" scoped>
 /* Importo le variabili scss */
 @import "../../assets/scss/_variables.scss";
-div.description-section {
-  max-width: 900px;
-  text-align: center;
-  margin: 0 auto;
-}
 
 div#cart-service {
   div.cart {
@@ -131,10 +126,6 @@ div#cart-service {
       i {
         font-size: 1.6rem;
       }
-    }
-
-    h3 {
-      color: $primary-color;
     }
 
     p {

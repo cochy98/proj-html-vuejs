@@ -1,4 +1,6 @@
-<template></template>
+<template>
+  <section id="articles">articles</section>
+</template>
 
 <script>
 export default {

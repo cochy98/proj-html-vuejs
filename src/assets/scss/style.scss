@@ -26,6 +26,7 @@ h1 {
 
 h3 {
   font-weight: 400;
+  color: $primary-color;
 }
 
 .my-fw-400 {
@@ -82,4 +83,21 @@ div.layover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+div.description-section {
+  max-width: 900px;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 1.5rem;
+
+  p {
+    color: $paragraph-color;
+  }
+}
+
+div.end-section h6 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 300;
 }
