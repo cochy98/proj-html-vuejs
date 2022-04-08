@@ -122,6 +122,8 @@ export default {
 @import "../assets/scss/_variables.scss";
 
 header {
+  margin-bottom: 4rem;
+
   nav {
     font-size: 0.95rem;
     padding: 0.9rem 3.5rem;
@@ -147,14 +149,6 @@ header {
     width: 100%;
     height: 700px;
     position: relative;
-
-    div.layover {
-      position: absolute;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.3);
-    }
 
     div.jumbo-description {
       position: absolute;

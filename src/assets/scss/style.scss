@@ -40,6 +40,14 @@ h3 {
   color: $primary-color;
 }
 
+div.layover {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 .my-btn {
   background-color: $primary-color;
   color: white;
@@ -55,6 +63,12 @@ h3 {
 
 .my-text-yellow {
   color: $secondary-color;
+}
+
+.my-yellow-hr {
+  width: 200px;
+  border-bottom: 2px solid $secondary-color;
+  margin: 1rem auto 2rem;
 }
 
 .my-flex-center {
