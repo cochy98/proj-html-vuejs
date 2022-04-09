@@ -30,6 +30,7 @@
                 class="nav-link"
                 :class="link.active ? 'active' : ''"
                 :href="link.href"
+                @click="switchActive(navLinks, index)"
                 >{{ link.name }}</a
               >
             </li>
@@ -94,25 +95,37 @@ export default {
         {
           active: false,
           name: "About",
-          href: "#",
+          href: "#about",
         },
         {
           active: false,
           name: "Services",
-          href: "#",
+          href: "#service",
         },
         {
           active: false,
           name: "Work",
-          href: "#",
+          href: "#work",
         },
         {
           active: false,
           name: "Articles",
-          href: "#",
+          href: "#articles",
         },
       ],
     };
+  },
+  methods: {
+    switchActive(arrayLink, selectedIndex) {
+      //console.log(selectedIndex);
+      // Mi assicuro che non ci sia la classe 'active' su nessun link
+      arrayLink.forEach((element) => {
+        element.active = false;
+      });
+
+      // Aggiungo la classe 'active' al link selezionato
+      arrayLink[selectedIndex].active = true;
+    },
   },
 };
 </script>
