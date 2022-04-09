@@ -1,15 +1,17 @@
 <template>
   <section id="service">
-    <div class="description-section container">
-      <h3>Specialists In Modern Construction</h3>
-      <div class="my-yellow-hr"></div>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi ad,
-        hic, pariatur illum consectetur minima delectus laboriosam officia
-        numquam
-      </p>
+    <div class="container">
+      <div class="description-section">
+        <h3>Specialists In Modern Construction</h3>
+        <div class="my-yellow-hr"></div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi ad,
+          hic, pariatur illum consectetur minima delectus laboriosam officia
+          numquam
+        </p>
+      </div>
     </div>
-    <div id="cart-service" class="container-fluid pt-5 px-5">
+    <div id="cart-service" class="container-fluid px-5">
       <div class="row p-5">
         <div class="col-12 col-md-6 col-lg-3 mb-4">
           <div class="cart my-flex-column-center">

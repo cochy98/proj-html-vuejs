@@ -1,13 +1,15 @@
 <template>
   <section id="work">
-    <div class="description-section container">
-      <h3>Explore Recent Work</h3>
-      <div class="my-yellow-hr"></div>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi ad,
-        hic, pariatur illum consectetur minima delectus laboriosam officia
-        numquam
-      </p>
+    <div class="container">
+      <div class="description-section">
+        <h3>Explore Recent Work</h3>
+        <div class="my-yellow-hr"></div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi ad,
+          hic, pariatur illum consectetur minima delectus laboriosam officia
+          numquam
+        </p>
+      </div>
     </div>
     <div id="carts-work" class="container py-4">
       <div class="row">

@@ -99,6 +99,90 @@
       <div class="arch arch-top"></div>
       <div class="arch arch-bottom"></div>
     </div>
+    <div class="container">
+      <div class="description-section">
+        <h3>Latest News</h3>
+        <div class="my-yellow-hr"></div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi ad,
+          hic, pariatur illum consectetur minima delectus laboriosam officia
+          numquam
+        </p>
+      </div>
+    </div>
+    <div id="latest-news" class="container py-4">
+      <div class="row gy-4">
+        <div class="col-12 col-md-4">
+          <div class="cart">
+            <img
+              src="../../assets/images/blog-post-134132600.jpg"
+              alt="Cart image 1"
+              class="cart-image"
+            />
+            <div class="cart-body">
+              <h4 class="cart-title">
+                Redeveloping Florida's Remote Southern Coast
+              </h4>
+              <p class="cart-date">December 7th, 2015</p>
+              <hr />
+              <p class="cart-content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur, dolores inventore provident rem sint quaerat laborum
+                quos architecto in debitis perferendis dolore accusantium
+                nostrum delectus adipisci reiciendis voluptas vitae quia.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="cart">
+            <img
+              src="../../assets/images/blog-post-92486644.jpg"
+              alt="Cart image 1"
+              class="cart-image"
+            />
+            <div class="cart-body">
+              <h4 class="cart-title">
+                How We Manage Large Construction Projects
+              </h4>
+              <p class="cart-date">December 7th, 2015</p>
+              <hr />
+              <p class="cart-content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur, dolores inventore provident rem sint quaerat laborum
+                quos architecto in debitis perferendis dolore accusantium
+                nostrum delectus adipisci reiciendis voluptas vitae quia.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="cart">
+            <img
+              src="../../assets/images/blog-post-332773904.jpg"
+              alt="Cart image 1"
+              class="cart-image"
+            />
+            <div class="cart-body">
+              <h4 class="cart-title">Future proofing a modern home</h4>
+              <p class="cart-date">December 6th, 2015</p>
+              <hr />
+              <p class="cart-content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Aspernatur, dolores inventore provident rem sint quaerat laborum
+                quos architecto in debitis perferendis dolore accusantium
+                nostrum delectus adipisci reiciendis voluptas vitae quia.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="end-section row py-5">
+        <div class="col-12">
+          <h6>View all articles</h6>
+        </div>
+      </div>
+    </div>
   </section>
 </template>
 
@@ -203,6 +287,33 @@ section#articles {
         h6 {
           text-transform: uppercase;
           font-weight: 600;
+        }
+      }
+    }
+  }
+
+  div#latest-news {
+    div.cart {
+      height: 100%;
+      background-color: white;
+
+      img.cart-image {
+        width: 100%;
+        max-height: 250px;
+        object-fit: cover;
+      }
+
+      div.cart-body {
+        padding: 2rem;
+        color: $paragraph-color;
+
+        h4.cart-title {
+          font-weight: 400;
+        }
+
+        p.cart-date {
+          font-size: 0.8rem;
+          margin-bottom: 1.4rem;
         }
       }
     }
