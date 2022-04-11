@@ -1,6 +1,6 @@
 <template>
   <header>
-    <nav id="header-nav" class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav id="header-nav" class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"
           ><img
@@ -140,6 +140,11 @@ header {
   nav {
     font-size: 0.95rem;
     padding: 0.9rem 3.5rem;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: white;
 
     img.nav-logo {
       height: 60px;
@@ -159,6 +164,7 @@ header {
   }
 
   div#header-jumbotron {
+    margin-top: 98.8px;
     width: 100%;
     height: 700px;
     position: relative;
