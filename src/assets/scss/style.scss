@@ -57,9 +57,15 @@ div.layover {
   border: none;
 }
 
+.my-btn:hover,
 .my-btn-yellow {
   background-color: $secondary-color;
   color: $paragraph-color;
+}
+
+.my-btn-yellow:hover {
+  background-color: $primary-color;
+  color: white;
 }
 
 .my-text-yellow {

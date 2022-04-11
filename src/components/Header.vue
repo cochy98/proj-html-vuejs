@@ -76,7 +76,7 @@
       <h3 class="text-center my-color-title my-fw-400 m-0">
         Do You Have A Construction Project We Can Help With?
       </h3>
-      <button class="my-btn">Get a free quote</button>
+      <button class="my-btn my-btn-white">Get a free quote</button>
     </div>
   </header>
 </template>
@@ -213,6 +213,12 @@ header {
       left: 50%;
       transform: translate(-50%, 1.5rem);
       border: 2px solid white;
+    }
+
+    button:hover {
+      color: black;
+      border-color: black;
+      background-color: white;
     }
   }
 }

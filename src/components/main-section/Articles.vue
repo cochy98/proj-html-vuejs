@@ -206,6 +206,16 @@ section#articles {
         margin-top: 0.7rem;
       }
     }
+
+    div.cart:hover {
+      span {
+        background-color: $secondary-color;
+      }
+
+      h6 {
+        color: $secondary-color;
+      }
+    }
   }
 
   /* div#my-carousel {

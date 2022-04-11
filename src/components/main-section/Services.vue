@@ -135,6 +135,10 @@ div#cart-service {
       line-height: 1.8rem;
     }
   }
+
+  div.cart:hover {
+    background-color: $secondary-color;
+  }
 }
 
 div#banner {
