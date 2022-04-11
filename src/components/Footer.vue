@@ -199,6 +199,22 @@
         </div>
       </div>
     </section>
+    <section id="footer-copyright">
+      <div class="container-fluid">
+        <div class="col-copyright">
+          ©COPYRIGHT 2012 - 2022 | AVADA THEME BY
+          <span class="fw-bold">THEMEFUSION</span> | ALL RIGHTS RESERVED |
+          POWERED BY WORDPRESS
+        </div>
+        <div class="col-social-link">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-youtube"></i>
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <a href="#" class="top-page"><i class="fas fa-chevron-up"></i></a>
+    </section>
   </footer>
 </template>
 
@@ -272,9 +288,13 @@ section#footer-banner {
   }
 }
 
+section#footer-nav,
+section#footer-copyright {
+  color: $paragraph-color;
+}
+
 section#footer-nav {
   background-color: #1e1e1e;
-  color: $paragraph-color;
   font-size: 0.85rem;
 
   img.social-icon {
@@ -345,6 +365,46 @@ section#footer-nav {
 
   .container-fluid > .row > div.col-12 {
     padding-bottom: 5rem;
+  }
+}
+
+section#footer-copyright {
+  background-color: #111111;
+  font-size: 0.72rem;
+  position: relative;
+
+  .container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 4.5rem;
+
+    div.col-copyright,
+    div.col-social-link {
+      margin: 2rem 0;
+    }
+
+    div.col-social-link {
+      i {
+        padding-left: 0.9rem;
+        font-size: 1.1rem;
+      }
+    }
+  }
+  a.top-page {
+    position: absolute;
+    bottom: 0;
+    right: 4.5rem;
+    font-size: 0.9rem;
+    padding: 0.4rem 1rem;
+    color: $paragraph-color;
+    border-top-left-radius: 0.4rem;
+    border-top-right-radius: 0.4rem;
+  }
+
+  a.top-page:hover {
+    background-color: #1e1e1e;
   }
 }
 </style>
