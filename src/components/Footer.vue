@@ -1,5 +1,5 @@
 <template>
-  <footer>
+  <footer id="about">
     <section id="footer-partners" class="container">
       <div class="description-section">
         <h3>Trusted Partners</h3>
@@ -60,11 +60,20 @@
         class="footer-banner-img"
       />
       <div class="footer-banner-desc container">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit error
-          inventore esse eligendi earum sed minus quos nam nulla expedita et,
-          deserunt eaque reiciendis a temporibus quia nobis explicabo! Eligendi.
-        </p>
+        <div class="my-col-left">
+          <h3 class="text-white">Building Inspiring Spaces</h3>
+          <div class="my-yellow-hr"></div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi
+            ad, hic, pariatur illum consectetur minima delectus laboriosam
+            officia numquam
+          </p>
+        </div>
+        <div class="my-col-right">
+          <button class="my-btn my-btn-yellow">Get a free quote</button>
+          <p>Only takes a few seconds!</p>
+        </div>
+        <!--  -->
       </div>
     </section>
     <section id="footer-nav"></section>
@@ -116,8 +125,28 @@ section#footer-banner {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 2px solid rebeccapurple;
     color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    div.my-col-left {
+      flex-basis: 60%;
+
+      div.my-yellow-hr {
+        margin: 1rem 0 2rem;
+      }
+    }
+
+    div.my-col-right {
+      text-align: center;
+
+      p {
+        font-size: 0.8rem;
+        margin: 0.45rem 0 0;
+      }
+    }
   }
 }
 </style>
