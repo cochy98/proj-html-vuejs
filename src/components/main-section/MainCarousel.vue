@@ -1,31 +1,39 @@
 <template>
-  <div id="my-carousel">
+  <div id="my-carousel" @mouseleave="autoPlay" @mouseover="stopAutoPlay">
     <div class="layover"></div>
-    <div class="my-carousel-item">
-      <img
-        src="../../assets/images/home-parallax-144609983.jpg"
-        alt="banner image"
-        class="my-item-img"
-      />
-      <div class="my-item-description">
-        <h3 class="text-white">Our Home Owners Say</h3>
-        <div class="my-yellow-hr"></div>
-        <img
-          class="rounded-pill"
-          src="../../assets/images/home-testimonial-113165296.jpg"
-          alt="home-testimonial"
-        />
-        <p>
-          “No man but feels more of a man in the world if he have but a bit of
-          ground that he can call his own. However small it is on the surface,
-          it is four thousand miles deep; and that is a very handsome property.”
-        </p>
-        <h6>Harry Smith new home owner</h6>
+    <div
+      class="my-carousel-items"
+      v-for="(element, index) in carouselImages"
+      :key="index"
+    >
+      <div
+        class="my-carousel-item"
+        :class="activeElement === index ? 'd-block' : 'd-none'"
+      >
+        <img :src="element.source" :alt="element.title" class="my-item-img" />
+        <div class="my-item-description">
+          <h3 class="text-white">{{ element.title }}</h3>
+          <div class="my-yellow-hr"></div>
+          <img
+            class="rounded-pill"
+            :src="element.author.image"
+            :alt="element.author.name"
+          />
+          <p>
+            {{ element.description }}
+          </p>
+          <h6>{{ element.author.name }}</h6>
+        </div>
       </div>
     </div>
     <div class="points-item">
-      <div class="current-item selected"></div>
-      <div class="current-item"></div>
+      <div
+        class="current-item"
+        :class="activeElement === index ? 'selected' : ''"
+        v-for="(element, index) in carouselImages"
+        :key="index"
+        @click="changeActive(index)"
+      ></div>
     </div>
     <div class="arch arch-top"></div>
     <div class="arch arch-bottom"></div>
@@ -35,6 +43,69 @@
 <script>
 export default {
   name: "MainCarousel",
+  data() {
+    return {
+      activeElement: 0,
+      hasAutoPlay: null,
+      carouselImages: [
+        {
+          title: "Our Home Owners Say",
+          description:
+            "“No man but feels more of a man in the world if he have but a bit of\
+          ground that he can call his own. However small it is on the surface,\
+          it is four thousand miles deep; and that is a very handsome property.”",
+          source: require("../../assets/images/home-parallax-144609983.jpg"),
+          author: {
+            image: require("../../assets/images/home-testimonial-113165296.jpg"),
+            name: "Harry Smith new home owner",
+          },
+        },
+        {
+          title: "Titolo 2",
+          description: "“La mia biografiaaaaa”",
+          source: require("../../assets/images/blog-post-92486644-400x241.jpg"),
+          author: {
+            image: require("../../assets/images/home-testimonial-84268399.jpg"),
+            name: "Io sono l'autore",
+          },
+        },
+        {
+          title: "Titolo 3",
+          description:
+            "“No man but feels more of a man in the world if he have but a bit of\
+          ground that he can call his own. However small it is on the surface,\
+          it is four thousand miles deep; and that is a very handsome property.”",
+          source: require("../../assets/images/home-parallax-144609983.jpg"),
+          author: {
+            image: require("../../assets/images/home-testimonial-113165296.jpg"),
+            name: "Harry Smith new home owner",
+          },
+        },
+      ],
+    };
+  },
+  methods: {
+    nextImage: function () {
+      if (this.activeElement === this.carouselImages.length - 1) {
+        this.activeElement = 0;
+      } else {
+        this.activeElement++;
+      }
+    },
+    autoPlay: function () {
+      console.warn("parto con l'autoPlay");
+      this.hasAutoPlay = setInterval(() => {
+        this.nextImage();
+      }, 3000);
+    },
+    stopAutoPlay: function () {
+      clearInterval(this.hasAutoPlay);
+      console.warn("ok, mi fermo!");
+    },
+    changeActive: function (newIndex) {
+      this.activeElement = newIndex;
+    },
+  },
 };
 </script>
 
